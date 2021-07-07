@@ -12,7 +12,7 @@ from airflow.utils.dates import days_ago
 with DAG(dag_id='basic-dag', schedule_interval=None, start_date=days_ago(1)) as dag:
 
     def some_code():
-        time.sleep(10 * 60)
+        time.sleep(110)
 
     run = PythonOperator(
         task_id='run',
